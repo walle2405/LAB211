@@ -1,7 +1,7 @@
-P001,Samsung Galaxy ZFlip,3600.0,19,Not Available
-P002,Samsung Galaxy S22,4500.0,20,Available
-P003,Samsung Galaxy ZFold4,5000.0,8,Not Available
-P004,Samsung Galaxy ZFold3,6500.0,17,Not Available
-P005,Samsung Galaxy M33,6700.0,24,Available
-P006,Samsung Galaxy A32,6100.0,11,Not Available
-P007,Samsung Galaxy S22 Ultimate,9999.0,12,Available
+P001,ASUS ROG Zephyrus,7000.0,19,Not Available
+P002,Apple iPhone 14 Pro,4500.0,20,Available
+P003,Samsung Galaxy S22,4500.0,8,Not Available
+P004,Acer Nitro 5,2500.0,17,Not Available
+P005,Lenovo Legion 7,3000.0,20,Available
+P007,Apple MacBook Pro,6000.0,12,Available
+P008,Apple iPhone 14 Pro Max,5500.0,5,Not Available
