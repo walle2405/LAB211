@@ -1,11 +1,20 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package data;
 
 import tools.MyTool;
 
-public class Product implements Comparable<Product>{
+/**
+ *
+ * @author ADMIN
+ */
+public class Product implements Comparable<Product> {
     public static final char SEPARATOR = ',';
     public static final String PRODUCT_FORMAT = "[a-zA-Z0-9\" \"]{5,100}";
-    public static final String ID_FORMAT = "P\\d{3}";
+    public static final String ID_FORMAT = "K\\d{3}";
     private String productID;
     private String productName;
     private double unitPrice;
@@ -20,12 +29,14 @@ public class Product implements Comparable<Product>{
         this.status = status;
     }
 
+    
+    
     public Product(String line) {
         String[] parts = line.split("" + this.SEPARATOR);
         productID = parts[0].trim();
         productName = parts[1].trim();
         unitPrice = MyTool.parseDouble(parts[2]);
-        quantity = MyTool.parseInt(parts[3]);
+        quantity = MyTool.parseInt(parts[3]); 
         status = parts[4].trim();
     }
 
@@ -69,11 +80,12 @@ public class Product implements Comparable<Product>{
         this.status = status;
     }
 
+    
     @Override
     public String toString() {
-        return productID + SEPARATOR +  productName + SEPARATOR + unitPrice + SEPARATOR + quantity + SEPARATOR + status + "\n" ;
+        return productID + SEPARATOR +  productName + SEPARATOR + unitPrice + SEPARATOR + quantity + SEPARATOR + status + "\n" ; 
     }
-
+    
     @Override
     public int compareTo(Product o) {
         return this.getProductID().compareToIgnoreCase(o.getProductID());
