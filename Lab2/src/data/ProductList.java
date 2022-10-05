@@ -1,7 +1,9 @@
 package data;
+import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 import tools.MyTool;
@@ -185,8 +187,15 @@ public class ProductList extends ArrayList<Product>{
             list.add(new Product(line));
         }
         Collections.sort(list);
+        System.out.println("+----------+----------+--------------------+---------------+--------------------------------+");
+        System.out.println("|    ID    |          PRODUCT NAME          |     UNIT PRICE     |  QUANTITY  |    STATUS    |");
+        System.out.println("+----------+----------+--------------------+---------------+--------------------------------+");
         for (Product product : list) {
-            System.out.println(product);
+            System.out.format("|%-10s|%-32s|%-20s|%-12s|%-14s|\n", product.getProductID(), product.getProductName(), product.getUnitPrice(), product.getQuantity(), product.getStatus());
         }
+        System.out.println("+----------+----------+--------------------+---------------+--------------------------------+");
+
     }
 }
+    
+
