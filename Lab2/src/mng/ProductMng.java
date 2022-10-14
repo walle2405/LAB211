@@ -1,26 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mng;
 
 import tools.MyTool;
 import data.Product;
 import data.ProductList;
 import java.text.ParseException;
-
-/**
- *
- * @author ADMIN
- */
 public class ProductMng {
 
     public static void main(String[] args) throws ParseException {
         boolean cont = false;
         boolean valid = false;
 
-        String[] options = {"Print", "Create a product", "Check exist Product", "Search product's information by name", "Update product", "Delete product", "Save product to file", "Print list Products from the line"};
+        String[] options = {"Print", "Create a product", "Check existing Product", "Search product's information by name", "Update product", "Delete product", "Save product to file", "Print all Products from the file"};
         Menu mnu = new Menu(options);
         ProductList pList = new ProductList();
         pList.initWithFile();
